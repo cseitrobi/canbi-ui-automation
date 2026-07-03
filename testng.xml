@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Mobile Automation Test Suite" parallel="tests" thread-count="1">
+    <listeners>
+        <listener class-name="com.pilla.automation.base.AllureTestWatcher"/>
+    </listeners>
+    <!-- Local Android Test -->
+    <test name="Local Android Test">
+        <!-- Runtime Configuration -->
+        <parameter name="runtime" value="local"/>
+        <parameter name="platform" value="android"/>
+
+        <!-- Android Device Configuration -->
+<!--        <parameter name="device-udid" value="0H54418I231
+0506B"/> -->
+        <parameter name="device-udid" value="emulator-5554"/>
+        <parameter name="app-package" value="com.additiv.canb"/>
+
+<!--        <packages>-->
+<!--            <package name="com.pilla.automation"/>-->
+<!--        </packages>-->
+
+                <classes>
+                    <class name="com.pilla.automation.FzLowRiskOnboardingFlowTest"/>
+                </classes>
+    </test>
+
+<!--    &lt;!&ndash; Local iOS Test &ndash;&gt;-->
+<!--    <test name="Local iOS Test">-->
+<!--        &lt;!&ndash; Runtime Configuration &ndash;&gt;-->
+<!--        <parameter name="runtime" value="local"/>-->
+<!--        <parameter name="platform" value="ios"/>-->
+
+<!--        &lt;!&ndash; Android Device Configuration &ndash;&gt;-->
+<!--        <parameter name="device-udid" value="RFCNC0A2ZYF"/>-->
+<!--        <parameter name="app-package" value="com.additiv.depositenkasse"/>-->
+
+<!--        <classes>-->
+<!--            <class name="com.cdk.automation.WelcomePageTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <!-- BrowserStack Android Test -->
+<!--    <test name="BrowserStack Android Test">-->
+<!--        &lt;!&ndash; Runtime Configuration &ndash;&gt;-->
+<!--        <parameter name="runtime" value="browser-stack"/>-->
+<!--        <parameter name="platform" value="android"/>-->
+
+<!--        &lt;!&ndash; BrowserStack Configuration &ndash;&gt;-->
+<!--        <parameter name="browserstack.device" value="Samsung Galaxy S22 Ultra"/>-->
+<!--        <parameter name="browserstack.os-version" value="12.0"/>-->
+<!--        <parameter name="browserstack.app" value="bs://e148f819bf149c11a967e39c6234fa57c28363c4"/>-->
+<!--        <parameter name="browserstack.build-version" value="v1.0"/>-->
+
+<!--        <packages>-->
+<!--            <package name="com.pilla.automation"/>-->
+<!--        </packages>-->
+<!--    </test>-->
+
+<!--    &lt;!&ndash; BrowserStack iOS Test &ndash;&gt;-->
+<!--    <test name="BrowserStack iOS Test">-->
+<!--        &lt;!&ndash; Runtime Configuration &ndash;&gt;-->
+<!--        <parameter name="runtime" value="browser-stack"/>-->
+<!--        <parameter name="platform" value="ios"/>-->
+
+<!--        &lt;!&ndash; BrowserStack Configuration &ndash;&gt;-->
+<!--        <parameter name="browserstack.device" value="iPhone 14 Pro Max"/>-->
+<!--        <parameter name="browserstack.os-version" value="16"/>-->
+<!--        <parameter name="browserstack.app" value="bs://85eb6a7b8399fda57f82d7b4cbc2b8dc5ecc9c50"/>-->
+<!--        <parameter name="browserstack.build-version" value="v1.0"/>-->
+
+<!--        <classes>-->
+<!--            <class name="com.cdk.automation.WelcomePageTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>
