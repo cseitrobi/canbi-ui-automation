@@ -1,7 +1,15 @@
 # Mobile Automation
 
 This repository contains automated tests for the Pilla mobile application using Appium, Java, and TestNG. The tests can be run locally or on BrowserStack.
+node version - v22.17.1
+java version - 21.0.8
+appium version - 3.2.2
+- uiautomator2@3.9.5 [installed (npm)]
+- flutter@3.6.0 [installed (npm)]
+- xcuitest@11.0.0 [installed (npm)]
 
+
+Pixel 8 Pro API 35
 ## Prerequisites
 
 ### Required Tools
